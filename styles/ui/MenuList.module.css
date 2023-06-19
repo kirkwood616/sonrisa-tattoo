@@ -44,12 +44,12 @@
 
 .MenuList__active > a {
   opacity: 1;
-  transition: opacity 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  visibility: visible;
 }
 
 .MenuList__inactive > a {
-  height: 0;
-  overflow: hidden;
   opacity: 0;
-  transition: opacity 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  visibility: hidden;
 }
