@@ -1,0 +1,55 @@
+.MenuList__active,
+.MenuList__inactive {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 4rem;
+  transition: all 0.25s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1000;
+}
+
+.MenuList__active {
+  border-bottom: 1px solid white;
+  box-shadow: 0 10px 20px black;
+  max-height: 1000px;
+  padding: 1rem;
+  visibility: visible;
+  width: 100%;
+}
+
+.MenuList__inactive {
+  border-bottom: 1px solid white;
+  max-height: 0px;
+  padding: 0 1rem;
+  visibility: hidden;
+}
+
+.MenuList__active > a,
+.MenuList__inactive > a {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  list-style: none;
+  text-decoration: none;
+}
+
+.MenuList__active > a:hover {
+  color: grey;
+  transition: color 0.25s ease-in-out;
+}
+
+.MenuList__active > a {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+}
+
+.MenuList__inactive > a {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.25s ease-in-out;
+}
