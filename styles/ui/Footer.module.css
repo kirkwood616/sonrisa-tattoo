@@ -15,7 +15,8 @@
 }
 
 .info_box > h2 {
-  background: linear-gradient(90deg, black, black) padding-box, linear-gradient(90deg, black, white, white, black) border-box;
+  background: linear-gradient(90deg, black, var(--dark-gray-2), var(--dark-gray-2), black) padding-box,
+    linear-gradient(90deg, black, white, white, black) border-box;
   border: 1px solid transparent;
   margin-bottom: 0.75rem;
 }
@@ -41,7 +42,6 @@
 .social_image {
   filter: invert(100%);
   margin: 0.5rem;
-  opacity: 0.75;
   box-shadow: 0 0 15px white;
 }
 
