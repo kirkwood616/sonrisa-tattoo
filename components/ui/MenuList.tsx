@@ -19,7 +19,7 @@ export default function MenuList({ isMenuActive, setIsMenuActive }: MenuListProp
       <Link href={"#"}>
         <li>WORK</li>
       </Link>
-      <Link href={"#"}>
+      <Link href={"aftercare"}>
         <li>AFTERCARE</li>
       </Link>
       <Link href={"#"}>
