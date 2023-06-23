@@ -1,0 +1,50 @@
+.AftercareInfo {
+  border-radius: 0.5rem;
+  margin: 0 1rem 2rem 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.title {
+  align-items: center;
+  border-bottom: 1px solid white;
+  display: flex;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.bar_left,
+.bar_right {
+  height: 1px;
+  width: 100%;
+}
+
+.bar_left {
+  background: linear-gradient(90deg, transparent, white);
+  margin-right: 0.5rem;
+}
+.bar_right {
+  background: linear-gradient(90deg, white, transparent);
+  margin-left: 0.5rem;
+}
+
+.info_list > ul {
+  list-style: none;
+  text-align: center;
+}
+
+.info_list > ul > li {
+  border-bottom: 1px solid white;
+  padding: 1rem;
+}
+
+.info_list > ul > li:last-child {
+  border: none;
+  padding: 1rem 0 0 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .AftercareInfo {
+    width: 750px;
+  }
+}
