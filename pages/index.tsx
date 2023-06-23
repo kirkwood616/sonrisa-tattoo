@@ -10,7 +10,6 @@ export default function Home() {
       <Head>
         <title>Sonrisa Tattoo</title>
         <meta name="description" content="Official website of Sonrisa Tattoo." />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scaleable=yes" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <h1>SONRISA TATTOO</h1>
