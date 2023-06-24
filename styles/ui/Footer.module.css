@@ -11,7 +11,7 @@
 
 .Footer a {
   text-decoration: underline;
-  color: lightgrey;
+  color: var(--light-gray-1);
 }
 
 .info_box > h2 {
