@@ -1,5 +1,4 @@
 .AftercareInfo {
-  border-radius: 0.5rem;
   margin: 0 1rem 2rem 1rem;
   width: 100%;
   padding: 1rem;
@@ -7,9 +6,12 @@
 
 .title {
   align-items: center;
-  border-bottom: 1px solid white;
+  background: linear-gradient(90deg, black, var(--dark-gray-2), black);
+  border-radius: 0.25rem;
+  border: 1px solid white;
   display: flex;
-  padding-bottom: 1rem;
+  justify-content: center;
+  padding: 0.5rem;
   text-align: center;
 }
 
@@ -46,5 +48,9 @@
 @media only screen and (min-width: 768px) {
   .AftercareInfo {
     width: 750px;
+  }
+
+  .AftercareInfo h2 {
+    font-size: 2rem;
   }
 }
