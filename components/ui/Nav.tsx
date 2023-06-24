@@ -7,11 +7,14 @@ interface NavProps {
   setIsMenuActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Nav({ isMenuActive }: NavProps) {
+export default function Nav({ isMenuActive, setIsMenuActive }: NavProps) {
   const { onClickStopPropagation } = useOnClickOutside();
 
   return (
-    <nav className={isMenuActive ? `${styles.Nav} ${styles.open}` : styles.Nav} onClick={onClickStopPropagation}>
+    <nav
+      className={isMenuActive ? `${styles.Nav} ${styles.open}` : styles.Nav}
+      onClick={(e) => onClickStopPropagation(e, setIsMenuActive)}
+    >
       <span></span>
       <span></span>
       <span></span>

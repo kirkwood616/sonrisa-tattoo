@@ -1,10 +1,10 @@
-import { useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 
 export default function useOnClickOutside() {
   const [isActive, setIsActive] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  function onClickStopPropagation(e: React.MouseEvent<HTMLDivElement>) {
+  function onClickStopPropagation(e: React.MouseEvent<HTMLElement>, setIsActive: Dispatch<SetStateAction<boolean>>) {
     e.preventDefault();
     e.stopPropagation();
     setIsActive((prev) => !prev);
