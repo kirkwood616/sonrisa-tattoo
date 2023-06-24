@@ -4,6 +4,12 @@ export default function useOnClickOutside() {
   const [isActive, setIsActive] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
 
+  function onClickStopPropagation(e: React.MouseEvent<HTMLDivElement>) {
+    e.preventDefault();
+    e.stopPropagation();
+    setIsActive((prev) => !prev);
+  }
+
   const handleKeyboardClose = (event: KeyboardEvent) => {
     if (isActive && event.key === "Escape") {
       setIsActive((prev) => !prev);
@@ -25,5 +31,5 @@ export default function useOnClickOutside() {
     };
   });
 
-  return { ref, isActive, setIsActive };
+  return { ref, isActive, setIsActive, onClickStopPropagation };
 }

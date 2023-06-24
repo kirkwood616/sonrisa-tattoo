@@ -1,3 +1,4 @@
+import useOnClickOutside from "@/hooks/useOnClickOutside";
 import { Dispatch, SetStateAction } from "react";
 import styles from "styles/ui/Nav.module.css";
 
@@ -6,12 +7,9 @@ interface NavProps {
   setIsMenuActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Nav({ isMenuActive, setIsMenuActive }: NavProps) {
-  function onClickStopPropagation(e: React.MouseEvent<HTMLDivElement>) {
-    e.preventDefault();
-    e.stopPropagation();
-    setIsMenuActive((prev) => !prev);
-  }
+export default function Nav({ isMenuActive }: NavProps) {
+  const { onClickStopPropagation } = useOnClickOutside();
+
   return (
     <nav className={isMenuActive ? `${styles.Nav} ${styles.open}` : styles.Nav} onClick={onClickStopPropagation}>
       <span></span>
