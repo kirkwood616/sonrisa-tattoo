@@ -72,6 +72,25 @@
   background-size: 100% 100%;
 }
 
+.underlay__active,
+.underlay__inactive {
+  margin-top: 5rem;
+  position: absolute;
+  top: 0;
+}
+
+.underlay__inactive {
+  max-height: 0vh;
+}
+
+.underlay__active {
+  backdrop-filter: blur(0.25rem);
+  background: rgba(40, 40, 40, 0.95);
+  height: 100vh;
+  transition: all 0.15s ease-in-out;
+  width: 100vw;
+}
+
 @media only screen and (min-width: 768px) {
   .MenuList__active li:hover {
     background-size: 75% 100%;
