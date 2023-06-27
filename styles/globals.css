@@ -64,6 +64,10 @@ body {
   background-attachment: fixed;
 }
 
+.lock_scroll {
+  overflow: hidden;
+}
+
 #__next {
   display: flex;
   flex-direction: column;
