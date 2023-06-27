@@ -1,3 +1,4 @@
+import useLockScroll from "@/hooks/useLockScroll";
 import useOnClickOutside from "@/hooks/useOnClickOutside";
 import Image from "next/image";
 import Link from "next/link";
@@ -7,6 +8,7 @@ import Nav from "./Nav";
 
 export default function Header() {
   const { ref, isActive, setIsActive } = useOnClickOutside();
+  useLockScroll(isActive);
 
   return (
     <header className={styles.Header} ref={ref} onClick={() => isActive && setIsActive((prev) => !prev)}>
