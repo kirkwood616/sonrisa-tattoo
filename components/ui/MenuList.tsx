@@ -11,21 +11,23 @@ export default function MenuList({ isMenuActive, setIsMenuActive }: MenuListProp
   return (
     <>
       <menu className={isMenuActive ? styles.MenuList__active : styles.MenuList__inactive}>
-        <li>
-          <Link href={"/"}>HOME</Link>
-        </li>
-        <li>
-          <Link href={"#"}>ABOUT</Link>
-        </li>
-        <li>
-          <Link href={"#"}>WORK</Link>
-        </li>
-        <li>
-          <Link href={"aftercare"}>AFTERCARE</Link>
-        </li>
-        <li>
-          <Link href={"#"}>CONTACT</Link>
-        </li>
+        <Link href={"/"}>
+          <li>
+            <Link href={"/"}>HOME</Link>
+          </li>
+        </Link>
+        <Link href={"#"}>
+          <li>ABOUT</li>
+        </Link>
+        <Link href={"#"}>
+          <li>WORK</li>
+        </Link>
+        <Link href={"aftercare"}>
+          <li>AFTERCARE</li>
+        </Link>
+        <Link href={"#"}>
+          <li>CONTACT</li>
+        </Link>
       </menu>
       <div className={isMenuActive ? styles.underlay__active : styles.underlay__inactive}></div>
     </>
