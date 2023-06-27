@@ -23,7 +23,6 @@
 .MenuList__inactive {
   border-bottom: 1px solid white;
   max-height: 0px;
-  padding: 0 1rem;
   visibility: hidden;
 }
 
@@ -64,6 +63,8 @@
   background-size: 0% 100%;
   border-image: linear-gradient(90deg, black 0%, black 25%, white 50%, black 75%, black 100%) 75;
   border-bottom: 1px solid transparent;
+  cursor: pointer;
+  list-style: none;
   padding: 0.5rem 0;
   transition: background-size 0.25s ease-in-out;
 }
@@ -85,7 +86,7 @@
 
 .underlay__active {
   backdrop-filter: blur(0.25rem);
-  background: rgba(40, 40, 40, 0.95);
+  background: rgba(40, 40, 40, 0.5);
   height: 100vh;
   transition: all 0.15s ease-in-out;
   width: 100vw;
