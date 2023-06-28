@@ -12,9 +12,7 @@ export default function MenuList({ isMenuActive, setIsMenuActive }: MenuListProp
     <>
       <menu className={isMenuActive ? styles.MenuList__active : styles.MenuList__inactive}>
         <Link href={"/"}>
-          <li>
-            <Link href={"/"}>HOME</Link>
-          </li>
+          <li>HOME</li>
         </Link>
         <Link href={"#"}>
           <li>ABOUT</li>
