@@ -1,6 +1,6 @@
 import useOnClickOutside from "@/hooks/useOnClickOutside";
 import { Dispatch, SetStateAction } from "react";
-import styles from "styles/ui/Nav.module.css";
+import styles from "styles/ui/components/Nav.module.css";
 
 interface NavProps {
   isMenuActive: boolean;

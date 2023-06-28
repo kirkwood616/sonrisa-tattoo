@@ -1,4 +1,4 @@
-import styles from "@/styles/Home.module.css";
+import styles from "@/styles/ui/pages/Home.module.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
@@ -11,9 +11,9 @@ export default function Home() {
         <title>Sonrisa Tattoo</title>
         <meta name="description" content="Official website of Sonrisa Tattoo." />
       </Head>
-      <main className={`${styles.main} ${inter.className}`}>
+      <section className={styles.Home}>
         <h1>SONRISA TATTOO</h1>
-      </main>
+      </section>
     </>
   );
 }

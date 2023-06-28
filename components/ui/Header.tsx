@@ -2,7 +2,7 @@ import useLockScroll from "@/hooks/useLockScroll";
 import useOnClickOutside from "@/hooks/useOnClickOutside";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "styles/ui/Header.module.css";
+import styles from "styles/ui/components/Header.module.css";
 import MenuList from "./MenuList";
 import Nav from "./Nav";
 

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Dispatch, SetStateAction } from "react";
-import styles from "styles/ui/MenuList.module.css";
+import styles from "styles/ui/components/MenuList.module.css";
 
 interface MenuListProps {
   isMenuActive: boolean;
