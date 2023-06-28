@@ -1,7 +1,7 @@
 import AftercareInfo from "@/components/ui/AftercareInfo";
 import PageTitle from "@/components/ui/PageTitle";
 import Head from "next/head";
-import styles from "styles/ui/pages/Aftercare.module.css";
+import styles from "styles/pages/Aftercare.module.css";
 
 export default function Aftercare() {
   return (

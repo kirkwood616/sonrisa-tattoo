@@ -1,4 +1,4 @@
-import styles from "styles/ui/components/AftercareInfo.module.css";
+import styles from "styles/components/ui/AftercareInfo.module.css";
 
 interface AftercareInfoProps {
   title: string;

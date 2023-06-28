@@ -1,4 +1,4 @@
-import styles from "@/styles/ui/pages/Home.module.css";
+import styles from "@/styles/pages/Home.module.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
