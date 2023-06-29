@@ -1,5 +1,5 @@
 .PageTitle {
-  background: linear-gradient(90deg, transparent, black, transparent);
+  background: linear-gradient(90deg, transparent, black, black, transparent);
   margin: 1rem auto 2rem auto;
   text-align: center;
   width: 100%;
