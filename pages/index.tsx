@@ -1,3 +1,4 @@
+import PageBanner from "@/components/ui/banners/PageBanner";
 import styles from "@/styles/pages/Home.module.css";
 import { Inter } from "next/font/google";
 import Head from "next/head";
@@ -9,10 +10,10 @@ export default function Home() {
     <>
       <Head>
         <title>Sonrisa Tattoo</title>
-        <meta name="description" content="Official website of Sonrisa Tattoo." />
+        <meta name="description" content="Official website of Sonrisa Tattoo. Located in Grand Rapids, Michigan" />
       </Head>
       <section className={styles.Home}>
-        <h1>SONRISA TATTOO</h1>
+        <PageBanner title={"Sonrisa Tattoo"} description={"Custom Quality Tattoo Shop in Grand Rapids, Michigan"} />
       </section>
     </>
   );

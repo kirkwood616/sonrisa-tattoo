@@ -1,5 +1,5 @@
 import AftercareInfo from "@/components/ui/AftercareInfo";
-import PageTitle from "@/components/ui/PageTitle";
+import PageBanner from "@/components/ui/banners/PageBanner";
 import Head from "next/head";
 import styles from "styles/pages/Aftercare.module.css";
 
@@ -11,8 +11,8 @@ export default function Aftercare() {
         <meta name="aftercare" content="Sonrisa Tattoo | Aftercare instructions for your new tattoo." />
       </Head>
 
-      <div className={styles.Aftercare}>
-        <PageTitle>AFTERCARE</PageTitle>
+      <section className={styles.Aftercare}>
+        <PageBanner title={"Aftercare"} description={"Aftercare instructions for your new tattoo."} />
 
         <AftercareInfo title="BANDAGES">
           <ul>
@@ -75,7 +75,7 @@ export default function Aftercare() {
             </li>
           </ul>
         </AftercareInfo>
-      </div>
+      </section>
     </>
   );
 }
