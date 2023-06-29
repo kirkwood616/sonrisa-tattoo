@@ -15,10 +15,12 @@ export default function Nav({ isMenuActive, setIsMenuActive }: NavProps) {
       className={isMenuActive ? `${styles.Nav} ${styles.open}` : styles.Nav}
       onClick={(e) => onClickStopPropagation(e, setIsMenuActive)}
     >
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
+      <button className={styles.hamburger_button}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </nav>
   );
 }
