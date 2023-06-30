@@ -1,13 +1,14 @@
 .MenuList__active,
-.MenuList__inactive {
+.MenuList {
   background-color: black;
   color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
   position: absolute;
   right: 0;
   text-align: center;
   top: 4rem;
   transition: all 0.25s ease-in-out;
-  visibility: hidden;
   width: 100%;
   z-index: 1000;
 }
@@ -20,17 +21,15 @@
   width: 100%;
 }
 
-.MenuList__inactive {
+.MenuList {
   border-bottom: 1px solid white;
   max-height: 0px;
   visibility: hidden;
 }
 
 .MenuList__active a,
-.MenuList__inactive a {
+.MenuList a {
   color: white;
-  font-size: 1.5rem;
-  font-weight: 600;
   position: relative;
   text-decoration: none;
 }
@@ -41,14 +40,14 @@
   visibility: visible;
 }
 
-.MenuList__inactive a {
+.MenuList a {
   opacity: 0;
   transition: all 0.15s ease-in-out;
   visibility: hidden;
 }
 
 .MenuList__active li,
-.MenuList__inactive li {
+.MenuList li {
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -72,13 +71,13 @@
 }
 
 .underlay__active,
-.underlay__inactive {
+.underlay {
   margin-top: 5rem;
   position: absolute;
   top: 0;
 }
 
-.underlay__inactive {
+.underlay {
   max-height: 0vh;
 }
 
@@ -93,5 +92,47 @@
 @media only screen and (min-width: 768px) {
   .MenuList__active li:hover {
     background-size: 75% 100%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .MenuList,
+  .MenuList a {
+    visibility: visible;
+  }
+
+  .MenuList {
+    border-bottom: none;
+    display: flex;
+    font-size: 1.25rem;
+    justify-content: space-evenly;
+    max-height: 1000px;
+    position: relative;
+    top: 0;
+    width: auto;
+  }
+
+  .MenuList a {
+    padding: 0 1.75rem;
+    opacity: 1;
+  }
+
+  .MenuList a:hover,
+  .active_page {
+    color: red;
+  }
+
+  .MenuList a:last-child {
+    padding-left: 1.75rem;
+  }
+
+  .MenuList a:not(:last-child)::after {
+    background: linear-gradient(0deg, transparent, var(--light-gray-1), transparent);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    width: 1px;
   }
 }

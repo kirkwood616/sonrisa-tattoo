@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { Dispatch, SetStateAction } from "react";
 import styles from "styles/components/ui/MenuList.module.css";
 
@@ -7,27 +8,29 @@ interface MenuListProps {
   setIsMenuActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function MenuList({ isMenuActive, setIsMenuActive }: MenuListProps) {
+export default function MenuList({ isMenuActive }: MenuListProps) {
+  const router = useRouter();
+
   return (
     <>
-      <menu className={isMenuActive ? styles.MenuList__active : styles.MenuList__inactive}>
+      <menu className={isMenuActive ? styles.MenuList__active : styles.MenuList}>
         <Link href={"/"}>
-          <li>HOME</li>
+          <li className={router.pathname === "/" ? styles.active_page : ""}>HOME</li>
         </Link>
-        <Link href={"#"}>
-          <li>ABOUT</li>
+        <Link href={"/about"}>
+          <li className={router.pathname === "/about" ? styles.active_page : ""}>ABOUT</li>
         </Link>
-        <Link href={"#"}>
-          <li>WORK</li>
+        <Link href={"/work"}>
+          <li className={router.pathname === "/work" ? styles.active_page : ""}>WORK</li>
         </Link>
-        <Link href={"aftercare"}>
-          <li>AFTERCARE</li>
+        <Link href={"/aftercare"}>
+          <li className={router.pathname === "/aftercare" ? styles.active_page : ""}>AFTERCARE</li>
         </Link>
-        <Link href={"#"}>
-          <li>CONTACT</li>
+        <Link href={"/contact"}>
+          <li className={router.pathname === "/contact" ? styles.active_page : ""}>CONTACT</li>
         </Link>
       </menu>
-      <div className={isMenuActive ? styles.underlay__active : styles.underlay__inactive}></div>
+      <div className={isMenuActive ? styles.underlay__active : styles.underlay}></div>
     </>
   );
 }
