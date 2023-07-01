@@ -1,7 +1,6 @@
-import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
+import { Dispatch, SetStateAction, useEffect, useRef } from "react";
 
-export default function useOnClickOutside() {
-  const [isActive, setIsActive] = useState<boolean>(false);
+export default function useOnClickOutside(isActive: boolean, setIsActive: Dispatch<SetStateAction<boolean>>) {
   const ref = useRef<HTMLDivElement>(null);
 
   function onClickStopPropagation(e: React.MouseEvent<HTMLElement>, setIsActive: Dispatch<SetStateAction<boolean>>) {
@@ -23,6 +22,9 @@ export default function useOnClickOutside() {
   };
 
   useEffect(() => {
+    if (!isActive) {
+      return;
+    }
     document.addEventListener("keydown", handleKeyboardClose, true);
     document.addEventListener("click", handleClickOutside, true);
     return () => {
@@ -31,5 +33,5 @@ export default function useOnClickOutside() {
     };
   });
 
-  return { ref, isActive, setIsActive, onClickStopPropagation };
+  return { ref, onClickStopPropagation };
 }

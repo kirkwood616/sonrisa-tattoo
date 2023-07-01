@@ -4,16 +4,16 @@ import { Dispatch, SetStateAction } from "react";
 import styles from "styles/components/ui/MenuList.module.css";
 
 interface MenuListProps {
-  isMenuActive: boolean;
-  setIsMenuActive: Dispatch<SetStateAction<boolean>>;
+  isNavActive: boolean;
+  setIsNavActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function MenuList({ isMenuActive }: MenuListProps) {
+export default function MenuList({ isNavActive }: MenuListProps) {
   const router = useRouter();
 
   return (
     <>
-      <menu className={isMenuActive ? styles.MenuList__active : styles.MenuList}>
+      <menu className={isNavActive ? styles.MenuList__active : styles.MenuList}>
         <Link href={"/"}>
           <li className={router.pathname === "/" ? styles.active_page : ""}>HOME</li>
         </Link>
@@ -30,7 +30,7 @@ export default function MenuList({ isMenuActive }: MenuListProps) {
           <li className={router.pathname === "/contact" ? styles.active_page : ""}>CONTACT</li>
         </Link>
       </menu>
-      <div className={isMenuActive ? styles.underlay__active : styles.underlay}></div>
+      <div className={isNavActive ? styles.underlay__active : styles.underlay}></div>
     </>
   );
 }

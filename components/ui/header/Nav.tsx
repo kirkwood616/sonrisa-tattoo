@@ -3,17 +3,17 @@ import { Dispatch, SetStateAction } from "react";
 import styles from "styles/components/ui/Nav.module.css";
 
 interface NavProps {
-  isMenuActive: boolean;
-  setIsMenuActive: Dispatch<SetStateAction<boolean>>;
+  isNavActive: boolean;
+  setIsNavActive: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Nav({ isMenuActive, setIsMenuActive }: NavProps) {
-  const { onClickStopPropagation } = useOnClickOutside();
+export default function Nav({ isNavActive, setIsNavActive }: NavProps) {
+  const { onClickStopPropagation } = useOnClickOutside(isNavActive, setIsNavActive);
 
   return (
     <nav
-      className={isMenuActive ? `${styles.Nav} ${styles.open}` : styles.Nav}
-      onClick={(e) => onClickStopPropagation(e, setIsMenuActive)}
+      className={isNavActive ? `${styles.Nav} ${styles.open}` : styles.Nav}
+      onClick={(e) => onClickStopPropagation(e, setIsNavActive)}
     >
       <button className={styles.hamburger_button}>
         <span></span>
