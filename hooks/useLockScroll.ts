@@ -1,7 +1,11 @@
 import { useEffect } from "react";
 
-export default function useLockScroll(isActive: boolean) {
+export default function useLockScroll(isEnabled: boolean, isActive: boolean) {
   useEffect(() => {
+    if (!isEnabled) {
+      return;
+    }
+
     if (!isActive) {
       return;
     }
@@ -28,5 +32,6 @@ export default function useLockScroll(isActive: boolean) {
       header.style.paddingRight = "0px";
       html.classList.remove("lock_scroll");
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isActive]);
 }
