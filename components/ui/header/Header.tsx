@@ -16,7 +16,7 @@ export default function Header() {
         <Image src={"/favicon-32x32.png"} width={32} height={32} alt={"logo"} />
       </Link>
       <Nav isNavActive={isNavActive} setIsNavActive={setIsNavActive} stopPropagation={onClickStopPropagation} />
-      <MenuList isNavActive={isNavActive} setIsNavActive={setIsNavActive} />
+      <MenuList isNavActive={isNavActive} />
     </header>
   );
 }

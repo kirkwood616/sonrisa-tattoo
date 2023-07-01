@@ -1,11 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Dispatch, SetStateAction } from "react";
 import styles from "styles/components/ui/MenuList.module.css";
 
 interface MenuListProps {
   isNavActive: boolean;
-  setIsNavActive: Dispatch<SetStateAction<boolean>>;
 }
 
 export default function MenuList({ isNavActive }: MenuListProps) {
