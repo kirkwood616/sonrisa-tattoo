@@ -37,7 +37,7 @@
 .MenuList a:hover,
 .MenuList__active a:hover,
 .active_page {
-  color: gold;
+  color: var(--menu-list-link__active);
 }
 
 .MenuList__active a {
@@ -135,5 +135,12 @@
     right: 0;
     top: 0%;
     width: 1px;
+  }
+
+  .MenuList .active_page {
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(90deg, transparent, var(--menu-list-link__active), transparent);
+    border-image-slice: 1;
+    padding: 0.5rem 0 0.25rem 0;
   }
 }
