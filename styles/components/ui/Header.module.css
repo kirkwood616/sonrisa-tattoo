@@ -12,3 +12,12 @@
   width: 100%;
   z-index: 900;
 }
+
+.logo {
+  margin-left: 0.5rem;
+}
+
+.logo,
+.logo > a {
+  display: flex;
+}

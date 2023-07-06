@@ -12,9 +12,11 @@ export default function Header() {
 
   return (
     <header className={styles.Header} ref={ref} onClick={() => isNavActive && setIsNavActive((prev) => !prev)}>
-      <Link href="/">
-        <Image src={"/favicon-32x32.png"} width={32} height={32} alt={"logo"} />
-      </Link>
+      <div className={styles.logo}>
+        <Link href="/">
+          <Image src={"/sonrisa_header_logo.png"} width={54} height={54} alt={"logo"} />
+        </Link>
+      </div>
       <Nav isNavActive={isNavActive} setIsNavActive={setIsNavActive} stopPropagation={onClickStopPropagation} />
       <MenuList isNavActive={isNavActive} />
     </header>
