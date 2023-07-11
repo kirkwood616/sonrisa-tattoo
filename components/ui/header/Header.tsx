@@ -14,7 +14,7 @@ export default function Header() {
     <header className={styles.Header} ref={ref} onClick={() => isNavActive && setIsNavActive((prev) => !prev)}>
       <div className={styles.logo}>
         <Link href="/">
-          <Image src={"/sonrisa_header_logo.png"} width={54} height={54} alt={"logo"} />
+          <Image src={"/android-chrome-192x192.png"} width={54} height={54} alt={"logo"} />
         </Link>
       </div>
       <Nav isNavActive={isNavActive} setIsNavActive={setIsNavActive} stopPropagation={onClickStopPropagation} />
