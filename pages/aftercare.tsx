@@ -11,7 +11,7 @@ export default function Aftercare() {
         <meta name="aftercare" content="Sonrisa Tattoo | Aftercare instructions for your new tattoo." />
       </Head>
 
-      <section className={styles.Aftercare}>
+      <div className={styles.Aftercare}>
         <PageBanner title={"Aftercare"} description={"Aftercare instructions for your new tattoo."} />
 
         <AftercareInfo title="BANDAGES">
@@ -75,7 +75,7 @@ export default function Aftercare() {
             </li>
           </ul>
         </AftercareInfo>
-      </section>
+      </div>
     </>
   );
 }
