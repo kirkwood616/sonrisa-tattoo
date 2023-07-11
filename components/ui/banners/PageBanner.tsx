@@ -15,7 +15,7 @@ export default function PageBanner({ title, description }: PageBannerProps) {
         <p>{description}</p>
       </div>
 
-      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} />
+      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
     </section>
   );
 }

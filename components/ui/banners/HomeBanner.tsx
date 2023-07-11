@@ -8,7 +8,7 @@ export default function HomeBanner() {
       <div className={styles.container}>
         <Logo.SonrisaFullOutlined />
       </div>
-      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} />
+      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
     </section>
   );
 }
