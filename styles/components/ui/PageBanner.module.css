@@ -26,6 +26,8 @@
 }
 
 .PageBanner h1 {
+  font-family: "Alchemist Solid";
+  letter-spacing: 0.25rem;
   padding: 0.5rem;
 }
 
