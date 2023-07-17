@@ -21,10 +21,6 @@ export default function useLockScroll(isEnabled: boolean, isActive: boolean) {
       html.style.paddingRight = `${scrollBarWidth}px`;
       header.style.paddingRight = `${scrollBarWidth}px`;
       html.classList.add("lock_scroll");
-    } else {
-      html.style.paddingRight = "0px";
-      header.style.paddingRight = "0px";
-      html.classList.remove("lock_scroll");
     }
 
     return () => {
