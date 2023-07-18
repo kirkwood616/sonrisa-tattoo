@@ -6,7 +6,13 @@ export default function HomeBanner() {
   return (
     <section className={styles.HomeBanner}>
       <div className={styles.container}>
-        <Logo.SonrisaFullOutlined />
+        <div className={styles.logo__container}>
+          <Logo.SonrisaFullOutlined />
+        </div>
+        <div className={styles.bar}></div>
+        <div className={styles.text__container}>
+          <p>Custom Quality Tattoo Shop in Grand Rapids, Michigan.</p>
+        </div>
       </div>
       <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
     </section>
