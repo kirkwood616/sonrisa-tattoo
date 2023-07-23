@@ -8,7 +8,7 @@
   right: 0;
   text-align: center;
   top: 4rem;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
   width: 100%;
   z-index: 1000;
 }
@@ -34,15 +34,15 @@
   text-decoration: none;
 }
 
-.MenuList a:hover,
-.MenuList__active a:hover,
+.MenuList a:is(:hover, :focus),
+.MenuList__active a:is(:hover, :focus),
 .active_page {
   color: var(--accent-color);
 }
 
 .MenuList__active a {
   opacity: 1;
-  transition: all 0.25s ease-in-out;
+  transition: all 0.15s ease-in-out;
   visibility: visible;
 }
 
@@ -72,7 +72,7 @@
   transition: background-size 0.25s ease-in-out;
 }
 
-.MenuList__active li:hover {
+.MenuList__active li:is(:hover, :focus) {
   background-size: 100% 100%;
 }
 
@@ -102,11 +102,6 @@
 }
 
 @media only screen and (min-width: 1024px) {
-  .MenuList,
-  .MenuList a {
-    visibility: visible;
-  }
-
   .MenuList {
     border-bottom: none;
     display: flex;
@@ -118,8 +113,14 @@
     width: auto;
   }
 
+  .MenuList,
+  .MenuList a {
+    visibility: visible;
+  }
+
   .MenuList a {
     padding: 0 1.75rem;
+    position: relative;
     opacity: 1;
   }
 
@@ -137,10 +138,34 @@
     width: 1px;
   }
 
-  .MenuList .active_page {
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(90deg, transparent, var(--accent-color), transparent);
-    border-image-slice: 1;
-    padding: 0.5rem 0 0.25rem 0;
+  .MenuList .active_page,
+  .MenuList .menu_item {
+    position: relative;
+    transition: all 0.15s ease;
+  }
+
+  .MenuList .active_page::after,
+  .MenuList .menu_item::after {
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    bottom: 2px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    transition: all 0.15s ease;
+    width: 0;
+  }
+
+  .MenuList .active_page::after,
+  .MenuList a:is(:hover) .menu_item::after {
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    width: 100%;
+  }
+
+  .MenuList:is(:hover) a:not(:hover) .menu_item,
+  .MenuList:is(:hover) a:not(:hover) .active_page {
+    filter: blur(3px);
+    transition: all 0.15s ease;
   }
 }
