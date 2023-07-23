@@ -1,0 +1,47 @@
+.InfoHeading {
+  align-items: center;
+  background: linear-gradient(90deg, black, var(--dark-gray-2), black) padding-box,
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25), white, rgba(255, 255, 255, 0.25)) border-box;
+  border-radius: 5rem;
+  border: 1px solid transparent;
+  box-shadow: 0 0 20px black;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 1.75rem auto;
+  max-width: 600px;
+  padding: 1rem 0;
+}
+
+.InfoHeading::before,
+.InfoHeading::after {
+  background-color: red;
+  content: "";
+  flex: 1;
+  height: 1px;
+}
+
+.InfoHeading::before {
+  background: linear-gradient(90deg, transparent, var(--light-gray-1));
+  margin-right: 0.25rem;
+}
+
+.InfoHeading::after {
+  background: linear-gradient(90deg, var(--light-gray-1), transparent);
+  margin-left: 0.25rem;
+}
+
+.InfoHeading h2 {
+  color: var(--accent-color);
+  filter: drop-shadow(2px 2px 0 black);
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: auto;
+  position: relative;
+  width: fit-content;
+}
+
+@media only screen and (min-width: 768px) {
+  .InfoHeading h2 {
+    font-size: 2rem;
+  }
+}
