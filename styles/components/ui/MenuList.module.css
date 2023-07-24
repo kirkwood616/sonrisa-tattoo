@@ -1,6 +1,7 @@
-.MenuList__active,
-.MenuList {
+.MenuList,
+.MenuList__active {
   background-color: black;
+  border-bottom: 1px solid white;
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
@@ -13,47 +14,54 @@
   z-index: 1000;
 }
 
+.MenuList {
+  max-height: 0px;
+  visibility: hidden;
+}
+
 .MenuList__active {
-  border-bottom: 1px solid white;
   box-shadow: 0 10px 20px black;
   max-height: 1000px;
   visibility: visible;
   width: 100%;
 }
 
-.MenuList {
-  border-bottom: 1px solid white;
-  max-height: 0px;
-  visibility: hidden;
-}
-
-.MenuList__active a,
-.MenuList a {
+.MenuList a,
+.MenuList__active a {
   color: white;
   position: relative;
   text-decoration: none;
-}
-
-.MenuList a:is(:hover, :focus),
-.MenuList__active a:is(:hover, :focus),
-.active_page {
-  color: var(--accent-color);
-}
-
-.MenuList__active a {
-  opacity: 1;
   transition: all 0.15s ease-in-out;
-  visibility: visible;
 }
 
 .MenuList a {
   opacity: 0;
-  transition: all 0.15s ease-in-out;
   visibility: hidden;
 }
 
-.MenuList__active li,
-.MenuList li {
+.MenuList__active a {
+  opacity: 1;
+  visibility: visible;
+}
+
+.MenuList a:is(:hover, :focus),
+.MenuList__active a:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.MenuList .active_page,
+.MenuList__active .active_page {
+  color: var(--accent-color);
+}
+
+.MenuList:hover > :not(:hover) > li,
+.MenuList__active:hover > :not(:hover) > li {
+  color: white;
+  background-size: 0% 100%;
+}
+
+.MenuList li,
+.MenuList__active li {
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -72,7 +80,8 @@
   transition: background-size 0.25s ease-in-out;
 }
 
-.MenuList__active li:is(:hover, :focus) {
+.MenuList__active li:is(:hover, :focus),
+.MenuList__active .active_page {
   background-size: 100% 100%;
 }
 
@@ -96,7 +105,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .MenuList__active li:hover {
+  .MenuList__active li:hover,
+  .MenuList__active .active_page {
     background-size: 75% 100%;
   }
 }
@@ -157,15 +167,12 @@
     width: 0;
   }
 
-  .MenuList .active_page::after,
-  .MenuList a:is(:hover) .menu_item::after {
-    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+  .MenuList:hover > a:hover > .menu_item::after,
+  .MenuList .active_page::after {
     width: 100%;
   }
 
-  .MenuList:is(:hover) a:not(:hover) .menu_item,
-  .MenuList:is(:hover) a:not(:hover) .active_page {
-    filter: blur(3px);
-    transition: all 0.15s ease;
+  .MenuList:hover > :not(:hover) > li::after {
+    width: 0;
   }
 }
