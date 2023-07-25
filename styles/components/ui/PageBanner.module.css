@@ -25,13 +25,6 @@
   z-index: 10;
 }
 
-.PageBanner h1 {
-  color: var(--accent-color);
-  font-family: "Alchemist Solid";
-  letter-spacing: 0.25rem;
-  padding: 0.75rem;
-}
-
 .container p {
   color: var(--light-gray-2);
   font-size: 1.25rem;

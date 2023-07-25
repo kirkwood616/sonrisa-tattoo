@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "styles/components/ui/PageBanner.module.css";
-import PageTitle from "../PageTitle";
+import PageTitle from "../headings/PageTitle";
 
 interface PageBannerProps {
   title: string;

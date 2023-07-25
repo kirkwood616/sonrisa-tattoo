@@ -1,12 +1,32 @@
 .PageTitle {
   background: linear-gradient(90deg, transparent, black, black, transparent);
   margin: 1rem auto 2rem auto;
+  position: relative;
   text-align: center;
   width: 100%;
 }
 
-.bar {
-  height: 1px;
+.PageTitle::before,
+.PageTitle::after {
   background: linear-gradient(90deg, transparent, white, transparent);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
   width: 100%;
+}
+
+.PageTitle h1 {
+  color: var(--accent-color);
+  font-family: "Alchemist Solid Caps";
+  font-size: calc(20px + (32 - 20) * ((100vw - 280px) / (768 - 280)));
+  letter-spacing: 0.25rem;
+  line-height: 1.25;
+  padding: 0.75rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .PageTitle h1 {
+    font-size: 3rem;
+  }
 }
