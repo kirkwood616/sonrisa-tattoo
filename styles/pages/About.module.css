@@ -26,12 +26,12 @@
   background-image: url("https://images.pexels.com/photos/2121348/pexels-photo-2121348.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  border: 1px solid var(--light-gray-2);
   border-radius: 100%;
   box-shadow: 0 0px 10px var(--light-gray-1);
   display: flex;
   height: 15rem;
   justify-content: center;
-  outline: 1px solid var(--light-gray-2);
   position: relative;
   width: 15rem;
 }
