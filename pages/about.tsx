@@ -1,4 +1,5 @@
 import PageBanner from "@/components/ui/banners/PageBanner";
+import InfoDiv from "@/components/ui/elements/InfoDiv";
 import InfoHeading from "@/components/ui/headings/InfoHeading";
 import Head from "next/head";
 import styles from "styles/pages/About.module.css";
@@ -18,17 +19,19 @@ export default function About() {
             <div className={styles.image}></div>
           </div>
           <article>
-            <InfoHeading title={"Sonrisa Tattoo"} />
-            <p>
-              Sonrisa Tattoo was founded in 2023 by owner Reuben Garcia. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim enim
-              sit amet venenatis.
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis. Commodo odio aenean sed adipiscing
-              diam donec.
-            </p>
+            <InfoDiv>
+              <InfoHeading title={"Sonrisa Tattoo"} />
+              <p>
+                Sonrisa Tattoo was founded in 2023 by owner Reuben Garcia. Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Orci nulla pellentesque dignissim
+                enim sit amet venenatis.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Orci nulla pellentesque dignissim enim sit amet venenatis. Commodo odio aenean sed adipiscing
+                diam donec.
+              </p>
+            </InfoDiv>
           </article>
         </section>
       </div>

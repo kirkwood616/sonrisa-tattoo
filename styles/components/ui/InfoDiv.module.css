@@ -1,0 +1,8 @@
+.InfoDiv {
+  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent),
+    radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.15), transparent);
+  box-shadow: 0 10px 20px black;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}

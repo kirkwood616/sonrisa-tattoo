@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 0;
 }
 
 .image__container {
@@ -37,12 +37,7 @@
 }
 
 .info__section article {
-  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent),
-    radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.15), transparent);
-  border-radius: 0.5rem;
-  box-shadow: 0 10px 20px black;
-  overflow: hidden;
-  padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -60,6 +55,7 @@
 @media only screen and (min-width: 768px) {
   .info__section {
     flex-direction: row;
+    padding: 2rem 1rem;
   }
 
   .image__container {
