@@ -19,14 +19,8 @@
 .PageTitle h1 {
   color: var(--accent-color);
   font-family: "Alchemist Solid Caps";
-  font-size: calc(20px + (32 - 20) * ((100vw - 280px) / (768 - 280)));
+  font-size: clamp(1rem, 10vw, 3rem);
   letter-spacing: 0.25rem;
   line-height: 1.25;
   padding: 0.75rem;
-}
-
-@media only screen and (min-width: 768px) {
-  .PageTitle h1 {
-    font-size: 3rem;
-  }
 }

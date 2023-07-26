@@ -33,7 +33,7 @@
 .InfoHeading h2 {
   color: var(--accent-color);
   filter: drop-shadow(2px 2px 0 black);
-  font-size: 1.5rem;
+  font-size: clamp(1.25rem, 5vw, 2rem);
   line-height: 1;
   margin: auto;
   position: relative;
@@ -42,6 +42,6 @@
 
 @media only screen and (min-width: 768px) {
   .InfoHeading h2 {
-    font-size: 2rem;
+    font-size: clamp(1.25rem, 3vw, 2rem);
   }
 }
