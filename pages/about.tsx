@@ -1,7 +1,6 @@
 import PageBanner from "@/components/ui/banners/PageBanner";
 import InfoSection from "@/components/ui/elements/InfoSection";
 import InfoSectionList from "@/components/ui/elements/InfoSectionList";
-// import Warnings from "@/components/ui/icons/Warnings";
 import Head from "next/head";
 import styles from "styles/pages/About.module.css";
 import storefront from "../public/stock_storefront.jpeg";
