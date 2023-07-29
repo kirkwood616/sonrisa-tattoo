@@ -1,6 +1,4 @@
 .InfoSection {
-  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent),
-    radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.1), transparent);
   border-bottom: 1px solid transparent;
   border-image: linear-gradient(90deg, transparent, white, transparent);
   padding: 3rem 0;
@@ -9,6 +7,17 @@
 .InfoSection:nth-child(even),
 .InfoSection:nth-child(odd) {
   border-image-slice: 1;
+}
+
+.InfoSection:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.05);
+}
+.InfoSection:nth-child(even) {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.InfoSection:last-child {
+  border-bottom: none;
 }
 
 .InfoSection article {

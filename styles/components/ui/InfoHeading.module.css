@@ -40,7 +40,7 @@
   width: fit-content;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .InfoHeading h2 {
     font-size: clamp(1.25rem, 3vw, 2rem);
   }
