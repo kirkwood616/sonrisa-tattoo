@@ -1,0 +1,127 @@
+.InfoSection {
+  background: radial-gradient(ellipse at top, rgba(255, 255, 255, 0.05), transparent),
+    radial-gradient(ellipse at bottom, rgba(255, 255, 255, 0.1), transparent);
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, white, transparent);
+  padding: 3rem 0;
+}
+
+.InfoSection:nth-child(even),
+.InfoSection:nth-child(odd) {
+  border-image-slice: 1;
+}
+
+.InfoSection article {
+  max-width: 800px;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.InfoSection article p {
+  margin-bottom: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+.InfoSection article ul {
+  list-style: none;
+}
+
+.InfoSection article li {
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(90deg, transparent, var(--light-gray-2), transparent);
+  border-image-slice: 1;
+  list-style: none;
+  padding: 1rem;
+}
+
+.InfoSection article li:first-child {
+  padding: 0 1rem 1rem;
+}
+
+.InfoSection article li:last-child {
+  border: none;
+}
+
+.info__container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.image__container {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.image__wrapper {
+  background: radial-gradient(var(--dark-gray-2), var(--dark-gray-1), black) padding-box,
+    linear-gradient(0deg, var(--light-gray-1), white) border-box;
+  border: 1px solid transparent;
+  border-radius: 100%;
+  box-shadow: 0 4px 15px black;
+  height: min(100vw / 1.25, 20rem);
+  overflow: hidden;
+  position: relative;
+  width: min(100vw / 1.25, 20rem);
+}
+
+@media only screen and (min-width: 1024px) {
+  .InfoSection {
+    padding: 3rem 1rem;
+  }
+
+  .InfoSection:nth-child(even) {
+    border-image: linear-gradient(90deg, transparent, white);
+  }
+
+  .InfoSection:nth-child(odd) {
+    border-image: linear-gradient(90deg, white, transparent);
+  }
+
+  .InfoSection:nth-child(even),
+  .InfoSection:nth-child(odd) {
+    border-image-slice: 1;
+  }
+
+  .InfoSection article {
+    flex: 2;
+    max-width: 900px;
+  }
+
+  .InfoSection p {
+    flex: 2;
+    padding: 0 1.5rem;
+  }
+
+  .info__container {
+    flex-direction: row;
+  }
+
+  .image__container {
+    margin: 0;
+  }
+
+  .image__wrapper {
+    height: 20rem;
+    width: 20rem;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .InfoSection article {
+    max-width: 1000px;
+  }
+
+  .image__wrapper {
+    height: min(100vw / 2, 25rem);
+    width: min(100vw / 2, 25rem);
+  }
+}

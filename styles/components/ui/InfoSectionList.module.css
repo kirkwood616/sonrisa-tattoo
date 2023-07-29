@@ -1,0 +1,9 @@
+.InfoSectionList {
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .InfoSectionList :nth-child(even) > div {
+    flex-direction: row-reverse;
+  }
+}
