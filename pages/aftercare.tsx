@@ -1,6 +1,7 @@
 import PageBanner from "@/components/ui/banners/PageBanner";
-import InfoDiv from "@/components/ui/elements/InfoDiv";
-import InfoHeading from "@/components/ui/headings/InfoHeading";
+import InfoSection from "@/components/ui/elements/InfoSection";
+import InfoSectionList from "@/components/ui/elements/InfoSectionList";
+import * as Icon from "@/components/ui/icons";
 import Head from "next/head";
 import styles from "styles/pages/Aftercare.module.css";
 
@@ -15,20 +16,16 @@ export default function Aftercare() {
       <div className={styles.Aftercare}>
         <PageBanner title={"Aftercare"} description={"Aftercare instructions for your new tattoo."} />
 
-        <article>
-          <InfoDiv>
-            <InfoHeading title={"Bandages"} />
+        <InfoSectionList>
+          <InfoSection title={"Bandages"} svgComponent={<Icon.Bandages />}>
             <ul>
               <li>Remove bandage after 2 hours.</li>
               <li>If the bandage sticks to the tattoo, rinse it with warm water unit it comes loose.</li>
               <li>Do not rebandage your tattoo. Allow it to breathe.</li>
             </ul>
-          </InfoDiv>
-        </article>
+          </InfoSection>
 
-        <article>
-          <InfoDiv>
-            <InfoHeading title={"Washing"} />
+          <InfoSection title={"Washing"} svgComponent={<Icon.Washing />}>
             <ul>
               <li>Wash your tattoo gently with warm water and a mild soap.</li>
               <li>
@@ -40,12 +37,9 @@ export default function Aftercare() {
               <li>Let your washed tattoo breathe for 10 - 15 minutes before applying topicals.</li>
               <li>Wash your tattoo according to these directions 2-3 times a day for 7-14 days.</li>
             </ul>
-          </InfoDiv>
-        </article>
+          </InfoSection>
 
-        <article>
-          <InfoDiv>
-            <InfoHeading title={"Topicals"} />
+          <InfoSection title={"Topicals"} svgComponent={<Icon.Topicals />}>
             <ul>
               <li>
                 After washing your new tattoo and it has fully dried, apply a very thin layer of Aquaphor or A&D ointment 3-4
@@ -62,12 +56,9 @@ export default function Aftercare() {
                 prolonged periods of direct sunlight.
               </li>
             </ul>
-          </InfoDiv>
-        </article>
+          </InfoSection>
 
-        <article>
-          <InfoDiv>
-            <InfoHeading title={"Warnings"} />
+          <InfoSection title={"Warnings"} svgComponent={<Icon.Warnings fillColor="red" />}>
             <ul>
               <li>
                 DO NOT: Pick or scratch at the tattoo. You could create scarring and dirty fingers may cause an infection.
@@ -86,8 +77,8 @@ export default function Aftercare() {
                 doctor.
               </li>
             </ul>
-          </InfoDiv>
-        </article>
+          </InfoSection>
+        </InfoSectionList>
       </div>
     </>
   );
