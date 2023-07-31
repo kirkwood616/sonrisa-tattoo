@@ -1,0 +1,27 @@
+.FooterHeading {
+  background: linear-gradient(90deg, transparent, var(--dark-gray-2), var(--dark-gray-2), transparent);
+  color: var(--accent-color);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0.1rem;
+  position: relative;
+  text-shadow: 2px 2px 0 black;
+}
+
+.FooterHeading::before,
+.FooterHeading::after {
+  background: linear-gradient(90deg, transparent, white, white, transparent);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.FooterHeading::before {
+  top: 0;
+}
+
+.FooterHeading::after {
+  bottom: 0;
+}
