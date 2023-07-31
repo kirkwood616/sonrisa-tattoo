@@ -1,6 +1,6 @@
 .Footer {
   align-items: center;
-  background: rgb(0, 0, 0);
+  background: black;
   border-top: 1px solid white;
   display: flex;
   flex-direction: column;
@@ -10,15 +10,8 @@
 }
 
 .Footer a {
+  color: var(--accent-color);
   text-decoration: underline;
-  color: var(--light-gray-1);
-}
-
-.info_box > h2 {
-  background: linear-gradient(90deg, black, var(--dark-gray-2), var(--dark-gray-2), black) padding-box,
-    linear-gradient(90deg, black, white, white, black) border-box;
-  border: 1px solid transparent;
-  margin-bottom: 0.75rem;
 }
 
 .info_box {
@@ -31,11 +24,11 @@
 }
 
 .p__info_heading {
+  font-weight: bold;
   text-decoration: underline;
 }
 
 .info_box__socials {
-  color: red;
   text-align: center;
 }
 
@@ -48,19 +41,17 @@
 @media only screen and (min-width: 768px) {
   .Footer {
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 
   .info_box {
+    flex: 0 0 30%;
     margin-bottom: 0;
     min-height: 200px;
-    flex: 0 0 30%;
   }
 
   .info_box__socials {
-    color: red;
     flex-basis: 100%;
-    text-align: center;
   }
 }
