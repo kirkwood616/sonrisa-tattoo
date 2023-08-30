@@ -1,5 +1,15 @@
 .PageBanner {
   background: black;
+  border-bottom: 1px solid transparent;
+  border-image: linear-gradient(
+    0.25turn,
+    var(--dark-gray-2),
+    var(--light-gray-1),
+    var(--light-gray-2),
+    var(--light-gray-1),
+    var(--dark-gray-2)
+  );
+  border-image-slice: 1;
   height: 15rem;
   object-fit: cover;
   overflow: hidden;

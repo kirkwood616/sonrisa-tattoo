@@ -76,10 +76,17 @@
   border: 1px solid transparent;
   border-radius: 100%;
   box-shadow: 0 4px 15px black;
-  height: min(100vw / 1.25, 20rem);
+  height: min(100vw / 1.25, 17rem);
   overflow: hidden;
   position: relative;
-  width: min(100vw / 1.25, 20rem);
+  width: min(100vw / 1.25, 17rem);
+}
+
+@media only screen and (min-width: 768px) {
+  .image__wrapper {
+    height: 20rem;
+    width: 20rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -100,6 +107,13 @@
     border-image-slice: 1;
   }
 
+  .InfoSection:nth-child(odd) .image__container {
+    margin-right: 1rem;
+  }
+  .InfoSection:nth-child(even) .image__container {
+    margin-left: 1rem;
+  }
+
   .InfoSection article {
     flex: 2;
     max-width: 900px;
@@ -112,15 +126,6 @@
 
   .info__container {
     flex-direction: row;
-  }
-
-  .image__container {
-    margin: 0;
-  }
-
-  .image__wrapper {
-    height: 20rem;
-    width: 20rem;
   }
 }
 

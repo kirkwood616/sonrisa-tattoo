@@ -29,13 +29,14 @@
 }
 
 .info_box__socials {
+  margin-top: 1rem;
   text-align: center;
 }
 
 .social_image {
   filter: invert(100%);
   margin: 0.5rem;
-  box-shadow: 0 0 15px white;
+  opacity: 0.5;
 }
 
 @media only screen and (min-width: 768px) {
