@@ -1,20 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
-@font-face {
-  font-family: "Alchemist Whiteboard", sans-serif;
-  font-style: normal;
-  src: url("../assets/font/AlchemistWhiteboard-DropShadow.otf");
-}
-@font-face {
-  ascent-override: 95%;
-  font-family: "Alchemist Solid";
-  font-style: normal;
-  src: url("../assets/font/alchemistsolid.otf");
-}
 
 @font-face {
   font-family: "Alchemist Solid Caps";
   font-style: normal;
-  src: url("../assets/font/AlchemistSolidCaps.otf");
+  src: url("/fonts/AlchemistSolidCaps.otf");
 }
 
 :root {
@@ -75,7 +64,7 @@ body {
 
 body {
   background-color: rgb(0, 0, 0);
-  background-image: url("/body_bg.png");
+  background-image: url("/images/body_bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

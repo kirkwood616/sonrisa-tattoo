@@ -15,7 +15,7 @@ export function PageBanner({ title, description }: PageBannerProps) {
         <p>{description}</p>
       </div>
 
-      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
+      <Image src={"/images/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
     </section>
   );
 }

@@ -1,7 +1,7 @@
 import { PageBanner } from "components/Banners";
 import { InfoSection, InfoSectionList } from "components/Info";
 import Head from "next/head";
-import storefront from "public/stock_storefront.jpeg";
+import storefront from "public/images/stock_storefront.jpeg";
 import styles from "./About.module.css";
 
 export default function About() {

@@ -14,7 +14,7 @@ export function HomeBanner() {
           <p>Custom Quality Tattoo Shop in Grand Rapids, Michigan.</p>
         </div>
       </div>
-      <Image src={"/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
+      <Image src={"/images/stock_banner_image.png"} fill={true} alt={"banner image"} priority />
     </section>
   );
 }

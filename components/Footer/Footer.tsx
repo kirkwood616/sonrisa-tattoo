@@ -28,14 +28,14 @@ export function Footer() {
       </section>
       <section className={styles.info_box__socials}>
         <Image
-          src={"/instagram_logo_48px.png"}
+          src={"/images/instagram_logo_48px.png"}
           height={48}
           width={48}
           alt={"Instagram icon"}
           className={styles.social_image}
         />
         <Image
-          src={"/facebook_logo_48px.png"}
+          src={"/images/facebook_logo_48px.png"}
           height={48}
           width={48}
           alt={"Facebook icon"}
