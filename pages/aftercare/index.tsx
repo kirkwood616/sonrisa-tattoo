@@ -19,7 +19,7 @@ export default function Aftercare() {
           <InfoSection title={"Bandages"} svgComponent={<Bandages />}>
             <ul>
               <li>Remove bandage after 2 hours.</li>
-              <li>If the bandage sticks to the tattoo, rinse it with warm water unit it comes loose.</li>
+              <li>If the bandage sticks to the tattoo, rinse it with warm water until it comes loose.</li>
               <li>Do not rebandage your tattoo. Allow it to breathe.</li>
             </ul>
           </InfoSection>
