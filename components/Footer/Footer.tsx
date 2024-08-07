@@ -21,7 +21,7 @@ export function Footer() {
         <p className={styles.p__info_heading}>Sunday - Tuesday</p>
         <p>Appointment Only</p>
         <br />
-        <p className={styles.p__info_heading}>Wednesday - Sunday</p>
+        <p className={styles.p__info_heading}>Wednesday - Saturday</p>
         <p>12:00 PM - 8:00 PM</p>
       </section>
       <section className={styles.info_box}>
