@@ -14,6 +14,16 @@
   text-decoration: underline;
 }
 
+.MapPin {
+  width: 2.5rem;
+  margin: 1rem auto 0 auto;
+}
+
+.SocialsIcon {
+  margin: 0.5rem;
+  width: 3rem;
+}
+
 .info_box {
   margin-bottom: 1rem;
   max-width: 500px;
@@ -29,14 +39,10 @@
 }
 
 .info_box__socials {
+  display: flex;
+  justify-content: center;
   margin-top: 1rem;
-  text-align: center;
-}
-
-.social_image {
-  filter: invert(100%);
-  margin: 0.5rem;
-  opacity: 0.5;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -49,7 +55,7 @@
   .info_box {
     flex: 0 0 30%;
     margin-bottom: 0;
-    min-height: 200px;
+    min-height: 225px;
   }
 
   .info_box__socials {

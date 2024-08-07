@@ -18,9 +18,6 @@ export function MenuList({ isNavActive }: MenuListProps) {
         <Link href={"/about"}>
           <li className={router.pathname === "/about" ? styles.active_page : styles.menu_item}>ABOUT</li>
         </Link>
-        <Link href={"/work"}>
-          <li className={router.pathname === "/work" ? styles.active_page : styles.menu_item}>WORK</li>
-        </Link>
         <Link href={"/aftercare"}>
           <li className={router.pathname === "/aftercare" ? styles.active_page : styles.menu_item}>AFTERCARE</li>
         </Link>

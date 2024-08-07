@@ -21,9 +21,9 @@
 }
 
 .InfoSection article {
-  max-width: 800px;
   padding: 0 1rem;
   text-align: center;
+  width: 100%;
 }
 
 .InfoSection article p {
@@ -76,17 +76,13 @@
   border: 1px solid transparent;
   border-radius: 100%;
   box-shadow: 0 4px 15px black;
-  height: min(100vw / 1.25, 17rem);
+  height: min(100vw / 1.25, 15rem);
   overflow: hidden;
   position: relative;
-  width: min(100vw / 1.25, 17rem);
+  width: min(100vw / 1.25, 15rem);
 }
 
 @media only screen and (min-width: 768px) {
-  .image__wrapper {
-    height: 20rem;
-    width: 20rem;
-  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -135,7 +131,7 @@
   }
 
   .image__wrapper {
-    height: min(100vw / 2, 25rem);
-    width: min(100vw / 2, 25rem);
+    height: min(100vw / 2, 20rem);
+    width: min(100vw / 2, 20rem);
   }
 }

@@ -1,3 +1,8 @@
 .About {
   width: 100%;
 }
+
+.SocialIcon {
+  margin: auto;
+  width: 3rem;
+}
