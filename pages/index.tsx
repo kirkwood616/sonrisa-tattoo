@@ -21,7 +21,7 @@ export default function Home() {
         <InfoSectionList>
           <InfoSection title={"GET A TATTOO"} image={storefront} imageAlt="Sonrisa Tattoo storefront picture">
             <h4>We Are Open!</h4>
-            <h5>Available for Appointments & Walk-In's</h5>
+            <h5>Available for Appointments & Walk-In&apos;s</h5>
             <Link href={"/contact"}>CONTACT US</Link>
             <br />
             <br />

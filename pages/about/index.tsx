@@ -21,15 +21,15 @@ export default function About() {
           <InfoSection title={"Sonrisa Tattoo"} image={storefront} imageAlt={"Sonrisa Tattoo storefront"}>
             <p>
               Sonrisa Tattoo was founded and opened in 2024 by owner Reuben Garcia. Our studio combines artistic innovation
-              with a commitment to quality and hygiene, ensuring you leave with a tattoo you'll love for a lifetime. Our
+              with a commitment to quality and hygiene, ensuring you leave with a tattoo you&apos;ll love for a lifetime. Our
               talented team of skilled artists specializes in a diverse range of styles, from intricate custom designs to
               classic flash tattoos.
             </p>
             <p>
               At Sonrisa Tattoo, we prioritize your comfort and safety, using top-notch equipment and maintaining a clean,
-              welcoming environment. Whether you're a first-timer or a seasoned ink enthusiast, we're here to make your
-              tattoo experience smooth, enjoyable, and unforgettable. Come visit us and let your skin become a canvas for
-              creativity!
+              welcoming environment. Whether you&apos;re a first-timer or a seasoned ink enthusiast, we&apos;re here to make
+              your tattoo experience smooth, enjoyable, and unforgettable. Come visit us and let your skin become a canvas
+              for creativity!
             </p>
           </InfoSection>
 
