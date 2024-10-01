@@ -22,7 +22,7 @@ export function Footer() {
         <p>Appointment Only</p>
         <br />
         <p className={styles.p__info_heading}>Wednesday - Saturday</p>
-        <p>12:00 PM - 8:00 PM</p>
+        <p>12:00 PM - 6:00 PM</p>
       </section>
       <section className={styles.info_box}>
         <FooterHeading title={"Contact"} />
