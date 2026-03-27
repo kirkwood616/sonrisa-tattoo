@@ -2,8 +2,8 @@ import { InstagramIcon } from "@/components/Icons";
 import { PageBanner } from "components/Banners";
 import { InfoSection, InfoSectionList } from "components/Info";
 import Head from "next/head";
-import artists from "public/images/ST_artists.jpg";
 import storefront from "public/images/ST_storefront.jpg";
+import window_sign from "public/images/ST_window_sign.jpg";
 import styles from "./About.module.css";
 
 export default function About() {
@@ -33,18 +33,31 @@ export default function About() {
             </p>
           </InfoSection>
 
-          <InfoSection title={"ARTISTS"} image={artists} imageAlt="Picture of the Sonrisa Tattoo Artists">
+          <InfoSection title={"ARTISTS"} image={window_sign} imageAlt="Picture of the Sonrisa Tattoo Window Sign">
             <li>
               <h2>REUBEN GARCIA</h2>
               <a href="https://www.instagram.com/rackruin/" target="_blank">
                 <InstagramIcon classStyle={styles.SocialIcon} fillColor="var(--accent-color)" />
               </a>
             </li>
-            <br />
-            <h2>ASHLEY HEINY</h2>
-            <a href="https://www.instagram.com/ashleyheiny/" target="_blank">
-              <InstagramIcon classStyle={styles.SocialIcon} fillColor="var(--accent-color)" />
-            </a>
+            <li>
+              <h2>DYLAN BARKER</h2>
+              <a href="https://www.instagram.com/rottendotcom" target="_blank">
+                <InstagramIcon classStyle={styles.SocialIcon} fillColor="var(--accent-color)" />
+              </a>
+            </li>
+            <li>
+              <h2>TRAVIS DODGE</h2>
+              <a href="https://www.instagram.com/prophettravis" target="_blank">
+                <InstagramIcon classStyle={styles.SocialIcon} fillColor="var(--accent-color)" />
+              </a>
+            </li>
+            <li>
+              <h2>DANNY HOWARD</h2>
+              <a href="https://www.instagram.com/dannyhowardtattoo" target="_blank">
+                <InstagramIcon classStyle={styles.SocialIcon} fillColor="var(--accent-color)" />
+              </a>
+            </li>
           </InfoSection>
         </InfoSectionList>
       </div>
